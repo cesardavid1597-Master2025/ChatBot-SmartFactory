@@ -1,0 +1,5 @@
+fecha_hora,usuario,pregunta,texto_normalizado,intencion,respuesta,estado
+2026-10-24 16:05:15,hola,hola,hola,saludo,¡Hola! Soy SmartFactoryBot. ¿En qué puedo ayudarte?,RESUELTO
+2026-10-24 16:05:27,hola,ayuda con login,ayuda con login,soporte_itac,"Si no puedes acceder a ITAC, valida usuario, contraseña y conexión de red. Si el problema continúa, contacta a Smart Factory.",RESUELTO
+2026-10-24 16:05:32,hola,sair,sair,desconocida,No identifiqué la consulta. Escribe ayuda para ver las opciones disponibles.,RESUELTO
+2026-10-24 16:05:33,hola,salir,salir,despedida,¡Hasta luego!,RESUELTO

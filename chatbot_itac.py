@@ -2,7 +2,16 @@ import re
 import unicodedata
 import nltk
 from nltk.chat.util import Chat, reflections
+import csv
+import os
+from datetime import datetime
+
+# =========================
+# BASE DE CONOCIMIENTO
+# =========================
+
 BASE = [
+
     ('saludo',
      r'^(hola|buenos dias|buenas tardes|buenas noches|hey)\b.*',
      '¡Hola! Soy SmartFactoryBot. ¿En qué puedo ayudarte?'),
@@ -67,61 +76,131 @@ BASE = [
      r'.*',
      'No identifiqué la consulta. Escribe ayuda para ver las opciones disponibles.')
 ]
+
+# =========================
+# CHATBOT
+# =========================
+
 chatbot = Chat(
     [(patron, [respuesta]) for _, patron, respuesta in BASE],
     reflections
 )
 
+# =========================
+# NORMALIZAR TEXTO
+# =========================
+
 def normalizar(texto):
-    texto = unicodedata.normalize('NFD', texto.lower().strip())
+
+    texto = unicodedata.normalize(
+        'NFD',
+        texto.lower().strip()
+    )
+
     texto = ''.join(
         c for c in texto
         if unicodedata.category(c) != 'Mn'
     )
+
     return re.sub(r'\s+', ' ', texto)
 
+# =========================
+# RESPONDER
+# =========================
+
 def responder(texto):
+
     limpio = normalizar(texto)
 
     intencion = next(
         nombre
         for nombre, patron, _ in BASE
-        if re.match(patron, limpio, re.IGNORECASE)
+        if re.match(
+            patron,
+            limpio,
+            re.IGNORECASE
+        )
     )
 
     return {
         'intencion': intencion,
-        'respuesta': chatbot.respond(limpio)
+        'respuesta': chatbot.respond(limpio),
+        'texto_normalizado': limpio
     }
 
-for nombre, patron, respuesta in BASE:
-    print(f'{nombre}: {respuesta}')
+# =========================
+# GUARDAR EVIDENCIA
+# =========================
 
-print('Versión NLTK:', nltk.__version__)
+def guardar_evidencia(
+    usuario,
+    pregunta,
+    resultado
+):
 
-while True:
-    pregunta = input("\nTú: ")
+    archivo = "evidencias_chatbot.csv"
 
-    if pregunta.lower() == "salir":
-        print("OrientaBot: ¡Hasta luego!")
-        break
+    existe = os.path.isfile(archivo)
 
-    resultado = responder(pregunta)
+    with open(
+        archivo,
+        mode="a",
+        newline="",
+        encoding="utf-8"
+    ) as csvfile:
 
-    print("Intención:", resultado["intencion"])
-    print("OrientaBot:", resultado["respuesta"])
+        writer = csv.writer(csvfile)
+
+        if not existe:
+
+            writer.writerow([
+                "fecha_hora",
+                "usuario",
+                "pregunta",
+                "texto_normalizado",
+                "intencion",
+                "respuesta",
+                "estado"
+            ])
+
+        writer.writerow([
+            datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            usuario,
+            pregunta,
+            resultado["texto_normalizado"],
+            resultado["intencion"],
+            resultado["respuesta"],
+            "RESUELTO"
+        ])
+
+# =========================
+# MAIN
+# =========================
 
 if __name__ == "__main__":
-    print('Versión NLTK:', nltk.__version__)
+
+    print("=" * 50)
+    print(" SMART FACTORY BOT ")
+    print("=" * 50)
+
+    print("Versión NLTK:", nltk.__version__)
+
+    usuario = input("\nNombre de usuario: ")
 
     while True:
-        pregunta = input("\nTú: ")
 
-        if pregunta.lower() == "salir":
-            print("OrientaBot: ¡Hasta luego!")
-            break
+        pregunta = input("\nTú: ")
 
         resultado = responder(pregunta)
 
+        guardar_evidencia(
+            usuario,
+            pregunta,
+            resultado
+        )
+
         print("Intención:", resultado["intencion"])
-        print("OrientaBot:", resultado["respuesta"])
+        print("SmartFactoryBot:", resultado["respuesta"])
+
+        if resultado["intencion"] == "despedida":
+            break
