@@ -1,0 +1,4 @@
+2026-11-21 13:18:55,hola,saludo,¡Hola! Soy SmartFactoryBot. ¿En qué puedo ayudarte?
+2026-11-21 13:19:04,mes,mes,"Verifica que la orden de producción se encuentre activa, que exista comunicación con MES y que los datos capturados sean correctos. Si persiste el problema, escala la incidencia."
+2026-11-21 13:19:20,ayuda,agradecimiento,"¡Con gusto! Si necesitas más ayuda, estoy disponible."
+2026-11-21 13:19:35,ayuda con scanner,scanners,"Valida la conexión del scanner, realiza una lectura de prueba y verifica que el código de barras sea legible."

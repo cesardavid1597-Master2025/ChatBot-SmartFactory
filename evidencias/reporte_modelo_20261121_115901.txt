@@ -1,0 +1,53 @@
+REPORTE DE ENTRENAMIENTO
+============================================================
+
+Fecha: 2026-11-21 11:59:01.926768
+
+Cantidad de registros: 250
+
+Distribución de intenciones:
+intencion
+soporte_itac      35
+impresoras        35
+mes               35
+scanners          30
+procedimientos    30
+saludo            25
+escalacion        25
+despedida         20
+agradecimiento    15
+Name: count, dtype: int64
+
+Accuracy: 76.00%
+
+REPORTE DE CLASIFICACION
+                precision    recall  f1-score   support
+
+agradecimiento       1.00      0.67      0.80         3
+     despedida       0.00      0.00      0.00         4
+    escalacion       0.75      0.60      0.67         5
+    impresoras       0.54      1.00      0.70         7
+           mes       0.64      1.00      0.78         7
+procedimientos       0.80      0.67      0.73         6
+        saludo       1.00      0.80      0.89         5
+      scanners       1.00      1.00      1.00         6
+  soporte_itac       1.00      0.71      0.83         7
+
+      accuracy                           0.76        50
+     macro avg       0.75      0.72      0.71        50
+  weighted avg       0.76      0.76      0.73        50
+
+
+MATRIZ DE CONFUSION
+                agradecimiento  despedida  escalacion  ...  saludo  scanners  soporte_itac
+agradecimiento               2          0           1  ...       0         0             0
+despedida                    0          0           0  ...       0         0             0
+escalacion                   0          0           3  ...       0         0             0
+impresoras                   0          0           0  ...       0         0             0
+mes                          0          0           0  ...       0         0             0
+procedimientos               0          0           0  ...       0         0             0
+saludo                       0          0           0  ...       4         0             0
+scanners                     0          0           0  ...       0         6             0
+soporte_itac                 0          0           0  ...       0         0             5
+
+[9 rows x 9 columns]

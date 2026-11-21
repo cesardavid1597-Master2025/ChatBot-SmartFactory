@@ -1,0 +1,260 @@
+texto,intencion
+
+hola,saludo
+buenos dias,saludo
+buenas tardes,saludo
+buenas noches,saludo
+hola smart factory,saludo
+hola chatbot,saludo
+necesito ayuda,saludo
+alguien puede ayudarme,saludo
+que tal,saludo
+como estas,saludo
+hola equipo smart factory,saludo
+buen dia,saludo
+saludos,saludo
+tengo una consulta,saludo
+pueden ayudarme,saludo
+hola necesito soporte,saludo
+quiero hacer una pregunta,saludo
+necesito informacion,saludo
+ayuda por favor,saludo
+hola buenos dias,saludo
+iniciar consulta,saludo
+comenzar,saludo
+me pueden apoyar,saludo
+quiero soporte,saludo
+hay alguien disponible,saludo
+
+no puedo entrar a itac,soporte_itac
+itac no funciona,soporte_itac
+error de login en itac,soporte_itac
+problema con itac,soporte_itac
+no puedo iniciar sesion en itac,soporte_itac
+itac marca error,soporte_itac
+error al abrir itac,soporte_itac
+itac esta caido,soporte_itac
+no carga itac,soporte_itac
+no tengo acceso a itac,soporte_itac
+itac no responde,soporte_itac
+falla itac,soporte_itac
+problema de acceso a itac,soporte_itac
+no abre itac,soporte_itac
+itac tarda mucho,soporte_itac
+error de autenticacion en itac,soporte_itac
+itac solicita contraseña nuevamente,soporte_itac
+no reconoce mi usuario en itac,soporte_itac
+problemas con trazabilidad,soporte_itac
+falla sistema de trazabilidad,soporte_itac
+no aparece mi orden en itac,soporte_itac
+itac no registra produccion,soporte_itac
+itac no carga estaciones,soporte_itac
+error en trazabilidad,soporte_itac
+itac congelado,soporte_itac
+itac lento,soporte_itac
+problema para registrar serie,soporte_itac
+error de comunicacion en itac,soporte_itac
+itac no muestra informacion,soporte_itac
+itac no permite continuar,soporte_itac
+error inesperado en itac,soporte_itac
+itac desconectado,soporte_itac
+falla en login de itac,soporte_itac
+sistema itac no disponible,soporte_itac
+necesito soporte para itac,soporte_itac
+
+la impresora no imprime,impresoras
+problema de impresion,impresoras
+falla impresora zebra,impresoras
+no salen etiquetas,impresoras
+error en impresora,impresoras
+la etiqueta sale en blanco,impresoras
+impresora detenida,impresoras
+impresora sin conexion,impresoras
+problema con zebra,impresoras
+impresora no responde,impresoras
+no imprime etiqueta de serie,impresoras
+etiqueta ilegible,impresoras
+impresion borrosa,impresoras
+error de cabezal de impresion,impresoras
+problemas con ribbon,impresoras
+falla de zebra zt410,impresoras
+impresora fuera de linea,impresoras
+no detecta impresora,impresoras
+error al imprimir,impresoras
+impresora bloqueada,impresoras
+atasco de etiquetas,impresoras
+la etiqueta sale cortada,impresoras
+impresora imprime doble,impresoras
+impresora imprime mal,impresoras
+etiqueta incompleta,impresoras
+problema con impresora de etiquetas,impresoras
+necesito reinstalar impresora,impresoras
+falla de impresion de etiquetas,impresoras
+zebra no imprime,impresoras
+error de conexion zebra,impresoras
+impresora desconectada,impresoras
+problema de calibracion,impresoras
+la impresion sale movida,impresoras
+impresora marca error,impresoras
+ayuda con impresora,impresoras
+
+scanner no funciona,scanners
+el lector no escanea,scanners
+error de scanner,scanners
+problema con escaner,scanners
+lector desconectado,scanners
+no lee codigo de barras,scanners
+scanner no detecta serial,scanners
+lector da error,scanners
+scanner congelado,scanners
+scanner lento,scanners
+problema de lectura,scanners
+codigo no se puede escanear,scanners
+error de lectura de codigo,scanners
+scanner honeywell falla,scanners
+lector honeywell no funciona,scanners
+scanner simbol no funciona,scanners
+problema de conexion scanner,scanners
+no reconoce el lector,scanners
+scanner bloqueado,scanners
+falla de lector,scanners
+lector no responde,scanners
+escaner da error,scanners
+scanner apagado,scanners
+problema para leer qr,scanners
+lector no detecta codigo,scanners
+codigo invalido al escanear,scanners
+error de dispositivo scanner,scanners
+ayuda con scanner,scanners
+scanner fuera de servicio,scanners
+problema con codigo de barras,scanners
+
+como imprimir etiquetas,procedimientos
+necesito procedimiento de impresion,procedimientos
+manual de itac,procedimientos
+como usar itac,procedimientos
+procedimiento de login,procedimientos
+guia de usuario itac,procedimientos
+como declarar produccion,procedimientos
+pasos para reportar produccion,procedimientos
+manual de mes,procedimientos
+instructivo de scanner,procedimientos
+procedimiento de retrabajo,procedimientos
+como cerrar una orden,procedimientos
+necesito instructivo,procedimientos
+donde encuentro el procedimiento,procedimientos
+quiero una guia operativa,procedimientos
+manual de operacion,procedimientos
+pasos para imprimir etiquetas,procedimientos
+procedimiento para login itac,procedimientos
+guia de trazabilidad,procedimientos
+manual de smart factory,procedimientos
+como registrar serie,procedimientos
+donde esta el instructivo,procedimientos
+quiero consultar el manual,procedimientos
+como configurar impresora,procedimientos
+como configurar scanner,procedimientos
+procedimiento para escalacion,procedimientos
+guia de soporte,procedimientos
+necesito documentacion,procedimientos
+como operar el sistema,procedimientos
+pasos para resolver problemas,procedimientos
+
+como escalo un problema,escalacion
+necesito soporte smart factory,escalacion
+a quien reporto una falla,escalacion
+levantar un andon,escalacion
+proceso de escalacion,escalacion
+contactar smart factory,escalacion
+requiero soporte urgente,escalacion
+quien atiende incidencias,escalacion
+escalar problema de produccion,escalacion
+problema critico en linea,escalacion
+necesito ayuda inmediata,escalacion
+como reportar incidencia,escalacion
+quien puede ayudarme,escalacion
+abrir ticket de soporte,escalacion
+solicitar soporte tecnico,escalacion
+problema urgente de sistema,escalacion
+como generar andon,escalacion
+soporte de manufactura,escalacion
+necesito asistencia smart factory,escalacion
+escalar falla de itac,escalacion
+escalar problema de mes,escalacion
+reportar sistema caido,escalacion
+solicitar ayuda smart factory,escalacion
+contactar ingeniero smart factory,escalacion
+incidencia de produccion,escalacion
+
+error de mes,mes
+mes no funciona,mes
+problemas con mes,mes
+mes esta caido,mes
+mes no carga informacion,mes
+no puedo reportar produccion,mes
+falla de mes,mes
+error en sistema mes,mes
+mes lento,mes
+mes congelado,mes
+problema para declarar produccion,mes
+error al registrar produccion,mes
+mes no muestra informacion,mes
+mes no abre,mes
+sistema mes fuera de servicio,mes
+falla captura en mes,mes
+mes no registra datos,mes
+problema de conexion con mes,mes
+error de comunicacion en mes,mes
+pantalla de mes en blanco,mes
+problema con orden en mes,mes
+mes no encuentra orden,mes
+mes no encuentra modelo,mes
+mes rechaza serial,mes
+error en captura de serial,mes
+mes indica fallo,mes
+problemas operativos en mes,mes
+mes detenido,mes
+no puedo cerrar orden en mes,mes
+mes no actualiza datos,mes
+error de produccion en mes,mes
+mes bloqueado,mes
+problema con ejecucion de mes,mes
+ayuda con mes,mes
+soporte para sistema mes,mes
+
+gracias,agradecimiento
+muchas gracias,agradecimiento
+te agradezco,agradecimiento
+excelente gracias,agradecimiento
+gracias por tu ayuda,agradecimiento
+muy amable gracias,agradecimiento
+gracias por el soporte,agradecimiento
+agradecido por la ayuda,agradecimiento
+perfecto gracias,agradecimiento
+todo claro gracias,agradecimiento
+gracias chatbot,agradecimiento
+me ayudaste mucho,agradecimiento
+gracias smart factory,agradecimiento
+excelente apoyo,agradecimiento
+agradezco la informacion,agradecimiento
+
+adios,despedida
+hasta luego,despedida
+salir,despedida
+cerrar chat,despedida
+nos vemos,despedida
+hasta pronto,despedida
+terminar conversacion,despedida
+fin,despedida
+gracias adios,despedida
+me retiro,despedida
+cerrar sesion,despedida
+finalizar,despedida
+hasta la proxima,despedida
+bye,despedida
+bye bye,despedida
+terminar consulta,despedida
+es todo gracias,despedida
+nada mas por ahora,despedida
+hasta mañana,despedida
+adios chatbot,despedida
